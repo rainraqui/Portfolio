@@ -43,3 +43,10 @@ function fixedHeader() {
     mobileHeader.classList.remove("sticky");
   }
 }
+
+function downloadCV() {
+  const link = document.createElement("a");
+  link.href = "./assets/rhar_cv.pdf";
+  link.download = "RAQUIPISO_RHA_CV";
+  link.click();
+}
