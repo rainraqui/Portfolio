@@ -55,13 +55,14 @@ a {
   color: #ffffff;
   text-decoration: none;
   text-decoration-color: white;
+  cursor: pointer;
 }
 
 a:hover {
-  color: rgb(55, 255, 235);
+  color: rgb(145, 145, 145);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(55, 255, 235);
+  text-decoration-color: rgb(145, 145, 145);
 }
 
 .logo {
@@ -319,6 +320,10 @@ section {
   text-align: center;
 }
 
+.text-container p {
+  text-align: justify;
+}
+
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -441,6 +446,18 @@ article .icon {
   height: 2.5rem;
 }
 
+.phone-details {
+  cursor: default;
+}
+
+.phone-details:hover {
+  text-decoration: none;
+}
+
+.email-linkedin-details:hover {
+  text-decoration: none;
+}
+
 /* Footer Section  */
 footer {
   height: 26vh;
@@ -450,5 +467,3 @@ footer {
 footer p {
   text-align: center;
 }
-
-/* Profile Pic Design */

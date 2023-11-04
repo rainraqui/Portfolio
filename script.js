@@ -50,3 +50,7 @@ function downloadCV() {
   link.download = "RAQUIPISO_RHA_CV";
   link.click();
 }
+
+function openLinkedInProfile() {
+  window.open("https://www.linkedin.com/in/rainraqui", "_blank");
+}
