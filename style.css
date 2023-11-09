@@ -474,3 +474,23 @@ footer {
 footer p {
 	text-align: center;
 }
+
+/* Floating Social Media Icons */
+.social-links {
+	position: fixed;
+	top: 25%;
+	left: 10px;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+}
+
+.social-links a {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.social-links img {
+	width: 40px;
+	height: auto;
+}
