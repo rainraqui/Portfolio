@@ -8,6 +8,7 @@
 
 body {
 	font-family: "Poppins", sans-serif;
+	/* background: #f1efe7; */
 }
 
 html {
@@ -450,14 +451,6 @@ article .icon {
 	cursor: default;
 }
 
-.email-icon {
-	height: 2.5rem;
-}
-
-.phone-icon {
-	height: 2.5rem;
-}
-
 .phone-details {
 	cursor: default;
 }
@@ -483,8 +476,8 @@ footer p {
 /* Floating Social Media Icons */
 .social-links {
 	position: fixed;
-	top: 25%;
-	left: 10px;
+	top: 50%;
+	left: 15px;
 	transform: translateY(-50%);
 	display: flex;
 	flex-direction: column;
@@ -501,49 +494,44 @@ footer p {
 	height: auto;
 }
 
-/* Dark Mode */
-.dark-mode-switch {
-	position: fixed;
-	top: 20px;
-	right: 20px;
+/* Loading Animation */
+.loading {
 	display: flex;
+	justify-content: center;
 	align-items: center;
-}
-
-.dark-mode-switch input {
-	display: none;
-}
-
-.dark-mode-switch label {
-	cursor: pointer;
-	width: 40px;
-	height: 20px;
-	background-color: #ddd;
-	border-radius: 10px;
-	position: relative;
-}
-
-.dark-mode-switch label:after {
-	content: "";
-	width: 18px;
-	height: 18px;
+	height: 100vh;
 	background-color: #fff;
-	border-radius: 50%;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	transition: transform 0.3s;
+}
+.loading-overlay {
+	text-align: center;
 }
 
-.dark-mode-switch input:checked + label {
-	background-color: #333;
+.border-black {
+	border: black solid 8px;
 }
 
-.dark-mode-switch input:checked + label:after {
-	transform: translateX(20px) translateY(-50%);
+#loading-logo {
+	width: 100px;
+	height: auto;
+	animation: flipAnimation 3s infinite;
 }
 
-body.dark-mode {
-	background-color: #333;
-	color: #fff;
+.loading-overlay {
+	text-align: center;
+}
+
+.main {
+	display: block;
+}
+
+@keyframes flipAnimation {
+	0% {
+		transform: scaleX(1);
+	}
+	50% {
+		transform: scaleX(-1);
+	}
+	100% {
+		transform: scaleX(1);
+	}
 }

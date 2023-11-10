@@ -1,3 +1,29 @@
+//Loading Animation
+document.addEventListener("DOMContentLoaded", function () {
+	// Initial state: Loading
+	let isLoading = true;
+
+	// Simulate a 3-second loading time (adjust as needed)
+	setTimeout(function () {
+		isLoading = false;
+		toggleLoadingBody();
+	}, 3000);
+
+	// Function to toggle visibility of loading and main bodies
+	function toggleLoadingBody() {
+		const loadingBody = document.querySelector(".loading");
+		const mainBody = document.querySelector(".main");
+
+		if (isLoading) {
+			loadingBody.style.display = "block";
+			mainBody.style.display = "none";
+		} else {
+			loadingBody.style.display = "none";
+			mainBody.style.display = "block";
+		}
+	}
+});
+
 function toggleMenu() {
 	console.log("toggleMenu() called");
 	const menu = document.querySelector(".menu-links");
