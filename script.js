@@ -80,3 +80,7 @@ function downloadCV() {
 function openLinkedInProfile() {
 	window.open("https://www.linkedin.com/in/rainraqui", "_blank");
 }
+
+function openGithubProfile() {
+	window.open("https://www.github.com/rainraqui", "_blank");
+}
