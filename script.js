@@ -84,3 +84,26 @@ function openLinkedInProfile() {
 function openGithubProfile() {
 	window.open("https://www.github.com/rainraqui", "_blank");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+	const projectCarousels = document.querySelectorAll(".carousel-container");
+
+	projectCarousels.forEach((carousel) => {
+		new Glide(carousel, {
+			type: "carousel",
+			perView: 3, // Adjust the number of images shown at once
+			focusAt: "center",
+			gap: 20, // Adjust the gap between images
+			autoplay: 3000, // Adjust the autoplay speed in milliseconds
+			hoverpause: true,
+			breakpoints: {
+				600: {
+					perView: 1,
+				},
+				768: {
+					perView: 2,
+				},
+			},
+		}).mount();
+	});
+});
