@@ -72,7 +72,7 @@ function fixedHeader() {
 
 function downloadCV() {
 	const link = document.createElement("a");
-	link.href = "./assets/RAINIER HANNAH A. RAQUIPISO_CV.pdf";
+	link.href = "./assets/Raquipiso_Rainier_Hannah_2024CV.pdf";
 	link.download = "RAQUIPISO_RHA_CV";
 	link.click();
 }
@@ -91,10 +91,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	projectCarousels.forEach((carousel) => {
 		new Glide(carousel, {
 			type: "carousel",
-			perView: 3, // Adjust the number of images shown at once
+			perView: 3,
 			focusAt: "center",
-			gap: 20, // Adjust the gap between images
-			autoplay: 3000, // Adjust the autoplay speed in milliseconds
+			gap: 20,
+			autoplay: 3000,
 			hoverpause: true,
 			breakpoints: {
 				600: {
