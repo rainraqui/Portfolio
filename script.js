@@ -72,7 +72,7 @@ function fixedHeader() {
 
 function downloadCV() {
 	const link = document.createElement("a");
-	link.href = "./assets/assets/Raquipiso_Rainier_Hannah_2024CV.pdf";
+	link.href = "./assets/Raquipiso_Rainier_Hannah_2024CV.pdf";
 	link.download = "RAQUIPISO_RHA_CV";
 	link.click();
 }
